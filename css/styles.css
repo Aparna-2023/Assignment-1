@@ -1,0 +1,210 @@
+/* Author : Aparna Raj
+Date:2/2/2023 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:ital,wght@0,700;0,900;1,600;1,900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+.container {
+	/* width: fit-content; */
+	/* background-color: green; */
+}
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/academy-banner.jpg);
+	position: relative;
+}
+.logo {
+	position: absolute;
+	right: 80px;
+	top: 230px;
+	font-size: 24px;
+	text-align: right;
+	color: #1e2531;
+}
+.presentation {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin: 30px;
+}
+.presentimg {
+	width: 55%;
+}
+.specialities {
+	width: 550px;
+	height: 270px;
+	background-color: #1e2531;
+	font-size: 22px;
+	line-height: 3;
+	padding: 10px;
+	position: absolute;
+	right: 160px;
+	top: 130px;
+}
+.specialities > p {
+	color: rgb(57, 238, 244);
+}
+.curlybrace {
+	color: red;
+}
+.para1 {
+	width: 77%;
+	color: #1e2531;
+	margin-left: 50px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.6;
+	word-spacing: 8px;
+}
+.courses {
+	/* width: 100%; */
+	min-height: 100vh;
+	background-image: url(../images/modulebg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.raw {
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/* margin-bottom: 30px; */
+}
+.php {
+	width: 20%;
+	height: 40px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 7);
+	text-align: center;
+	padding: 16px;
+	border-radius: 13px;
+}
+.para2 {
+	margin: 20px auto;
+}
+.interviews {
+	/* height: 100vh; */
+	display: flex;
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+}
+.raw2 {
+	width: 50%;
+	height: 500px;
+	background-image: url(../images/testsbg.jpg);
+	background-size: cover;
+}
+.raw3 {
+	width: 50%;
+	height: 500px;
+	background-image: url(../images/intrvwbg.jpg);
+}
+.inside {
+	width: 90%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	background-color: rgba(6, 8, 11, 0.7);
+	padding: 30px;
+	flex-wrap: wrap;
+}
+.para3 {
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+}
+.footer {
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.join-now {
+	width: 40%;
+	padding: 10px;
+	border: 3px solid #f26244;
+	margin: 40px auto;
+}
+.join-now > a {
+	text-decoration: none;
+	color: #f26244;
+}
+.address {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.address1 {
+	width: 50%;
+}
+.address1 > p {
+	font-size: 14px;
+}
+.address1 > h3 {
+	margin-bottom: 10%;
+}
+.contact {
+	margin-top: 10%;
+	font-size: 14px;
+}
+@media screen and (max-width: 576px) {
+	* {
+		box-sizing: border-box;
+	}
+	.banner {
+		width: 100%;
+		height: 100vh;
+		background-image: none;
+		background-color: #eee;
+	}
+	.logo {
+		text-align: center;
+	}
+	.presentation {
+		width: 100%;
+		position: static;
+		flex-direction: column;
+		margin: 0;
+	}
+	.presentimg {
+		width: 100%;
+		margin: 0;
+	}
+	.specialities {
+		width: 100%;
+		position: static;
+	}
+	.para1,
+	.para2 {
+		width: fit-content;
+	}
+	.courses {
+		background-image: none;
+		background-color: #eee;
+		margin-top: px;
+	}
+	.interviews {
+		flex-direction: column;
+	}
+	.raw2,
+	.raw3 {
+		width: 100%;
+	}
+	.footer {
+		width: 100%;
+	}
+}
